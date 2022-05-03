@@ -26,19 +26,22 @@ body, html {
 }
 
 .flex-container-image {
+    background: url(images/image-header-desktop.jpg);
+    position: relative;
+    overflow: hidden;
     height: 60%;
     width: 40%;
 }
 
-.flex-container-image {
-    height: 60%;
-    width: 40%;
-}
-
-.flex-container-image img {
-    height: 100%;
+.flex-container-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
     width: 100%;
-    object-fit: cover;
+    background: rgba(170, 92, 219, 0.664);
 }
+
+
 
 
