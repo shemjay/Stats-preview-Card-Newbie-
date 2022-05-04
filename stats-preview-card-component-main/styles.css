@@ -20,12 +20,14 @@ body, html {
 }
 
 .flex-container-content {
+    border-radius: 10px 0px 0px 10px;
     height: 60%;
     width: 40%;
     background-color: hsl(244, 38%, 16%);
 }
 
 .flex-container-image {
+    border-radius: 0px 10px 10px 0px;
     background: url(images/image-header-desktop.jpg);
     position: relative;
     overflow: hidden;
