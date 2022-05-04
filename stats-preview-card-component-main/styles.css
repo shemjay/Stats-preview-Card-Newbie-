@@ -41,7 +41,7 @@ body, html {
     left: 0;
     height:100%;
     width: 100%;
-    background: rgba(170, 92, 219, 0.664);
+    background: rgba(170, 92, 219, 0.664); /* The color of the image is not accurate yet */
 }
 
 .content-title {
@@ -49,12 +49,20 @@ body, html {
     color: hsl(0, 0%, 100%);
     font-weight: 700;
     padding: 20px 0px 0px 60px;
-    font-size: 1.8em;
+    font-size: 2rem;
 }
 
 .content-title span {
     color: hsl(277, 64%, 61%);
 }
 
+.content-body-text {
+    font-family: 'Inter';
+    color: hsla(0, 0%, 100%, 0.6);
+    padding: 0px 0px 0px 60px;
+    font-weight: 400;
+    font-size: 15px; /* Body text is protuding to the right past the title unlike the style guide */ 
+    line-height: 1.8;
+}
 
 
