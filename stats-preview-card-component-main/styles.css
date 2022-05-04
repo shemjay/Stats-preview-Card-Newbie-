@@ -65,4 +65,15 @@ body, html {
     line-height: 1.8;
 }
 
+.body-text-span {
+    font-family: 'Inter';
+    justify-content: space-around;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
 
+.body-text- {
+    /*font-family: 'Lexend-Deca';
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
