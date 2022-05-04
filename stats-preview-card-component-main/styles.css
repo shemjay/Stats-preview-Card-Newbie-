@@ -44,6 +44,17 @@ body, html {
     background: rgba(170, 92, 219, 0.664);
 }
 
+.content-title {
+    font-family: 'Inter';
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    padding: 20px 0px 0px 60px;
+    font-size: 1.8em;
+}
+
+.content-title span {
+    color: hsl(277, 64%, 61%);
+}
 
 
 
