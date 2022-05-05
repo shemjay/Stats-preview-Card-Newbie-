@@ -31,8 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here]()
 
 ## My process
 
@@ -140,7 +139,6 @@ I found a lot of useful solutions during my development of this project (most on
 
 ## Author
 
-- Website - [Shem Jaoko](https://www.your-site.com)
 - Frontend Mentor - [@shemjay](https://www.frontendmentor.io/profile/shemjay)
 - Twitter - [@shemstack](https://www.twitter.com/shemstack)
 
