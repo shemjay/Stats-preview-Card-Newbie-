@@ -16,8 +16,6 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -28,15 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](solution-screenshot.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
@@ -50,61 +41,111 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+1. How to put a div containing text and one containing an image side by side.
 
-To see how you can add code snippets, see below:
+2. How to add color to an image:
+```css
+.flex-container-image {
+    border-radius: 0px 10px 10px 0px;
+    background: url(images/image-header-desktop.jpg);
+    position: relative;
+    overflow: hidden;
+    height: 60%;
+    width: 40%;
+}
 
+.flex-container-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+    background: rgba(170, 92, 219, 0.546); /* The color of the image is not accurate yet */
+}
+```
+
+3. How to position text stacked on top of each other. This was the hardest part of the project for me for some reason. The text at the very bottom of the paragrpah is suppossed to be stacked like a column and then evenly spaced:
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<!-- Text below body-->
+          <div class = "content-lower-body">
+            <div>
+              <h3>10k+</h3>
+              <p>Companies</p>
+            </div>
+            <div>
+              <h3>314</h3>
+              <p>Templates</p>
+            </div>
+            <div>
+              <h3>12M+</h3>
+              <p>Queries</p>
+            </div>
+          </div>
+      </div>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.content-lower-body {
+    display: flex;
+}
+
+.content-lower-body h3{
+    font-size: 1em;
+    line-height: 0.5;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    padding-left: 60px;
+    padding-top: 20px;
+}
+
+.content-lower-body p{
+    font-family: 'Inter';
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 0.5;
+    color: hsla(0, 0%, 100%, 0.6);
+    padding-left: 60px;
+
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+4. How to add rounded broders to only part of a div. I had no idea you could do that!:
+```css
+.flex-container-content {
+    border-radius: 10px 0px 0px 10px;
+    height: 60%;
+    width: 40%;
+    background-color: hsl(244, 38%, 16%);
 }
 ```
+
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+1. Adding color to an image. I still need to find out how to add text to an image properly. There were many solutions i found online especially on stack overflow. The best ones included the use of filter and the use of a div overlay. I am yet to get the hang of it but I will!
+2. Positioning, positioning, positioning. God this has been my bane for so long. Whether it be flex, grid or floats its always been a hard concept to grasp.
+3. Naming github commits
+4. Naming css/html classes
+5. Indsutry standards 
+6. responsive design
+7. Cleaner programming solutions. No more hacky solutions!
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+I found a lot of useful solutions during my development of this project (most on stack lol) but unfortunately i didnt save them. I know they are still in my browser histiry but i cant look for them all. However i have now learned to be saving them for suture use.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Shem Jaoko](https://www.your-site.com)
+- Frontend Mentor - [@shemjay](https://www.frontendmentor.io/profile/shemjay)
+- Twitter - [@shemstack](https://www.twitter.com/shemstack)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Thanks to 'My name is Macca' on The Programmers Hangout discord for helping me with the positioning of the paragraph text!
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
